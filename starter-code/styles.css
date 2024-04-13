@@ -1,0 +1,189 @@
+body, html {
+   margin: 0;
+   padding: 0;
+   background-color: #fafafa;
+}
+
+h1 {
+   font-family: 'RED HAT DISPLAY BLACK', sans-serif;
+   font-size: 64px;
+   line-height: 64px;
+}
+
+h2 {
+   font-family: 'RED HAT DISPLAY BLACK', sans-serif;
+   font-size: 40px;
+   line-height: 44px;
+}
+
+.textbody {
+   font-family: 'RED HAT DISPLAY MEDIUM', sans-serif;
+   font-size: 18px;
+   line-height: 26px;
+}
+
+.overline{
+   font-family: 'RED HAT DISPLAY BLACK', sans-serif;
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 4px;
+   color: #4D96A9;
+}
+
+.container {
+   width: 100%;
+   margin: auto;
+}
+
+header {
+   text-align: center;
+   padding: 60px;
+}
+
+.hero {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+.hero img {
+   width: 25%;
+   height: auto;
+}
+
+.herotext {
+   text-align: center;
+
+}
+
+.buttons {
+   margin-top: 20px;
+}
+
+button {
+   padding: 10px 20px;
+   margin: 5px;
+   cursor: pointer;
+}
+
+#download {
+   background-color: #4D96A9;
+   color: #fafafa;
+   border:none;
+   border-radius: 29px;
+}
+
+#info {
+   background-color: #855FB1;
+   color: #fafafa;
+   border:none;
+   border-radius: 29px;
+}
+
+.gallery {
+   display: flex;
+   justify-content:center;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-top: 15%;
+}
+
+.gallery img {
+   width: 19%;
+   height: auto;
+   border-radius: 20px;
+   margin-right: 30px;
+}
+
+.info {
+   width:auto;
+   height: auto;
+   padding: 20px;
+   text-align: center;
+   margin-left: 35%;
+   margin-right: 35%;
+   margin-top: 8%;
+}
+
+.more-info {
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   color: white;
+   margin-left: 10%;
+   margin-right: 20%;
+}
+
+footer {
+   position: relative;
+   margin-top: 10%;
+   justify-content: center;
+   background-image: url('assets/desktop/image-footer.jpg');
+   background-size: cover;
+   background-position: center;
+   padding: 4%;
+}
+x
+footer::before {
+   position:absolute;
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: rgba(77, 150, 169, 0.5);
+   z-index: 1;
+}
+
+@media (max-width: 768px) {
+   h1 {
+       font-size: 48px;
+       line-height: 52px;
+   }
+
+   h2 {
+       font-size: 32px;
+       line-height: 36px;
+   }
+
+   .hero img {
+       width: 50%;
+   }
+
+   .gallery img {
+       width: 29%;
+       margin-right: 15px;
+   }
+
+   .info, .more-info {
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+}
+
+@media (max-width: 480px) {
+   h1 {
+       font-size: 32px;
+       line-height: 36px;
+   }
+
+   h2 {
+       font-size: 24px;
+       line-height: 28px;
+   }
+
+   .hero, .gallery, .info, .more-info {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .hero img, .gallery img {
+       width: 40%;
+       margin: 10px 0;
+   }
+
+   .info, .more-info {
+       width: 60%;
+       margin: 20px auto;
+   }
+}
